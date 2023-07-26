@@ -2,13 +2,19 @@ extends layout
 
 block main-content 
 
-  h1.page-title Welcome to WeatherTune!
+  h1.page-title Welcome to WeatherTune! &#127780; &#127782; &#127784; &#127785; &#127786;
   div
     form(action="/weather" method="GET")
       label(for="city") Enter a city:
-      input#city(type="text" name="city" required)
+      input#city(type="text" name="city" placeholder="e.g. Toronto" required)
       button(type="submit") Get Weather
 
-  
+  div#howto 
+  h2 How to Use
+  ol
+    li Enter any city name in the input field provided on the homepage.
+    li Click on the "Get Weather" button to retrieve the current temperature and weather conditions for the specified city.
+    li Based on the weather conditions, the website will suggest a playlist on Spotify that matches the current weather.
+    li Enjoy the playlist and the weather-themed music!
   
   

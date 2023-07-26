@@ -1,10 +1,22 @@
 body {
   font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: aquamarine;
+  background-color: #fff8f0;
   padding: 1em;
+}
+
+a{
+  text-decoration: none;
 }
 
 #footer{
   position: absolute;
   bottom: 1em;
+}
+
+#site-name{
+  color: #323e39;
+}
+
+h1, h2, h3, #site-name a:hover{
+  color: #9dd9d2;
 }

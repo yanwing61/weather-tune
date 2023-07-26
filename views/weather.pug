@@ -2,6 +2,7 @@ extends layout
 
 block main-content
   h1.page-title Live weather for #{weather.name}
+    img(src=`https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`)
   h2
     | Temperature: #{weather.main.temp} °C
   p  #{weather.weather[0].description}

@@ -1,0 +1,14 @@
+extends layout 
+
+block main-content 
+
+  h1.page-title Welcome to WeatherTune!
+  div
+    form(action="/weather" method="GET")
+      label(for="city") Enter a city:
+      input#city(type="text" name="city" required)
+      button(type="submit") Get Weather
+
+  
+  
+  

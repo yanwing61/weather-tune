@@ -1,0 +1,17 @@
+block variables 
+doctype html 
+html 
+  head
+    meta(charset="utf-8")
+    title #{title} | WeatherTune
+    block scripts 
+      link(rel="stylesheet", type="text/css", href="/styles.css")
+  body
+    header#header 
+      .header-content   
+        h2#site-name 
+          a(href="/") WeatherTune 
+    main#main 
+      block main-content 
+    footer#footer 
+      p &copy; Copyright Yan Wing Pang, 2023.

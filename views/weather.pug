@@ -1,0 +1,9 @@
+extends layout
+
+block main-content
+  h1.page-title Live weather for #{weather.name}
+  h2
+    | Temperature: #{weather.main.temp} °C
+  p  #{weather.weather[0].description}
+  button(type="button")
+    a(href="./music") Go for a playlist matches today's weather

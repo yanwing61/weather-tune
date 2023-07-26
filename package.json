@@ -1,0 +1,20 @@
+{
+  "name": "api-weather-music",
+  "version": "1.0.0",
+  "description": "Test website using Express and Node to combine weather and music API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --config bs-config.js"
+  },
+  "author": "Yan Wing Pang",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

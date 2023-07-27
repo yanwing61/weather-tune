@@ -28,7 +28,7 @@ let weatherData = null;
 app.get("/weather", async (request, response) => {
   const city = request.query.city;
   weatherData = await weather.getWeather(city);
-  console.log(weatherData);
+  //console.log(weatherData);
   response.render("weather", { title: "weather", weather: weatherData });
 });
 

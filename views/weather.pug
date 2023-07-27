@@ -2,9 +2,13 @@ extends layout
 
 block main-content
   h1.page-title Live weather for #{weather.name}
-    img(src=`https://openweathermap.org/img/wn/${weather.weather[0].icon}.png`)
-  h2
-    | Temperature: #{weather.main.temp} °C
-  p  #{weather.weather[0].description}
-  button(type="button")
-    a(href="./music") Go for a playlist matches today's weather
+  div#weather-result
+    p  Temperature: #{weather.main.temp} °C
+    p  Humidity: #{weather.main.humidity} %
+    p  
+        img(src=`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`)
+    p  #{weather.weather[0].description}
+  div#go-music
+    a(href="./music") Find Playlist for Today's Weather &#127926;
+  div#back
+    a(href="/") Back to Home  

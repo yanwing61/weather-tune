@@ -73,7 +73,17 @@ function getMusic(weatherData) {
       const accessToken = await getAccessToken();
       const spotify = "https://api.spotify.com/";
       const weatherDes = weatherData.weather[0].main.toLowerCase();
-      const reqUrl = `${spotify}/v1/search?q=${weatherDes}+weather&type=playlist&limit=1`;
+
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      const randomNum = getRandomInt(0, 10); 
+      //console.log(randomNum);
+
+      const reqUrl = `${spotify}/v1/search?q=${weatherDes}+weather&type=playlist&offset=${randomNum}&limit=1`;
       const musicOptions = {
         hostname: 'api.spotify.com',
         path: reqUrl,

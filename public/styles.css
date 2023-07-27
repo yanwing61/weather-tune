@@ -1,22 +1,134 @@
 body {
   font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: #fff8f0;
-  padding: 1em;
+  margin: 0;
+  height: 100%;
+}
+
+#header{
+  background-color: #9dd9d2;
+  padding: 2em;
+}
+
+#main{
+  padding: 1em 2em;
+  min-height: 85vh;
+}
+
+#footer{
+  padding: 1em 2em;
+  position: sticky;
+  bottom: 0;
+  background-color: #cccccc;
 }
 
 a{
   text-decoration: none;
+  color: #13776b;
 }
 
-#footer{
-  position: absolute;
-  bottom: 1em;
-}
-
-#site-name{
+#site-name a{
   color: #323e39;
 }
 
-h1, h2, h3, #site-name a:hover{
-  color: #9dd9d2;
+h1, h2, h3{
+  color: #13776b;
+  margin-top: 1em;
+}
+
+
+/* ===INDEX=== */
+
+form{
+  background-color: #b7f0e9;
+  padding: 2em;
+}
+
+.form-container{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5em;
+  font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+button[type="submit"] {
+  width: 50%;
+  padding: 0.5em;
+  font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1em;
+  background-color: #329b8f;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #13776b;
+}
+
+/* ===WEATHER=== */
+
+#go-music, #back {
+  max-width: 350px;
+  background-color: #329b8f;
+  border-radius: 5px;
+  padding: 0.1em;
+  margin: 1em 0;
+}
+
+#go-music:hover, #back:hover{
+  background-color: #13776b;
+}
+
+#go-music a, #back a{
+  display: block;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+
+#weather-result{
+  padding: 2em;
+  max-width: 300px;
+  background-color: #b7f0e9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===MUSIC=== */
+
+#music-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+#playlist{
+  flex-grow: 2;
+}
+
+#playlist-info{
+  flex-grow: 1;
 }

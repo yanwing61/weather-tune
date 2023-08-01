@@ -11,3 +11,6 @@ on terminal:
 1. npm i to install node_modules
 2. npm run dev to run the app on http://localhost:3000
 
+## API credit
+- Weather API [https://openweathermap.org/api]
+- Spotify API [https://developer.spotify.com/documentation/]

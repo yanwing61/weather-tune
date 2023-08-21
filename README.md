@@ -1,5 +1,7 @@
 # WeatherTune app
 
+Live at: [https://weather-tune.fly.dev/]
+
 ## How to use
 1. Enter any city name in the input field provided on the homepage.
 2. Click on the "Get Weather" button to retrieve the current temperature and weather conditions for the specified city.
